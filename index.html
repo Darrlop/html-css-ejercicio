@@ -4,8 +4,174 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Maisu Dortoka</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/banner.css">
+  <link rel="stylesheet" href="styles/common.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-brands/css/uicons-brands.css'> <!--social-->
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-straight/css/uicons-regular-straight.css'> <!--menú-->
 </head>
 <body>
+  <!-- Icono para menú
+  <i class="fi fi-rs-grid"></i>
+  -->
+  <header class="header">
+    <div class="header__image">
+      <h1>Muten Roshi, Maestro Tortuga</h1>
+      <img class="avatar" src="/images/dortoka.webp" alt="Maisu Dortoka">
+    </div>
+  </header>
+  <main class="main">
+
+    <section class="banner">
+      <div class="banner__image"></div>
+      <div class="banner__content">
+        <h3>Escuela de artes marciales Kame.</h3>
+        <h4>¡Todo el conocimiento a tu alcance!</h4>
+        <hr>
+        <p class="cita">Las artes marciales no se estudian con el propósito de ser fuerte, ganar peleas y que las chicas les digan: «Pero mira qué fuerte estás, te mando un besito...», se estudian con el propósito de vivir mejor cada día.</p>
+        <p class="firma">-Kame-Sen'nin-</p>
+        <hr>
+      </div>
+      <!--
+      <div class="banner__image">
+        <img width="80%" src="/images/KameHouse_small.jpg" alt="Kame House">
+      </div>
+      -->  
+    </section>
+      
+    
+    
+    <div class="container">
+      <p>Seguramente hayas llegado a oír de mí a traves de varios nombres: Kame-Sen'in,
+        Duende Tortuga, Muten Roshi, Maisu Dortoka...</p> 
+      <p>Rellena este formulario y valoraré el aceptarte como uno de mis escasísimos 
+        alumnos </p>
+
+      <section>
+        <form method="post" action="/contactar"> <!--!!-->
+          
+          <div class="form__element">
+            <label class="form__label" for="nombre">Nombre</label>
+            <input class="form__input" name="nombre" type="text" id="nombre" placeholder="Añade tu nombre" required>
+          </div>
+          <div class="form__element">
+            <label class="form__label" for="apellidos">Apellidos</label>
+            <input class="form__input" name="apellidos" type="text" id="apellidos" placeholder="Añade tu nombre" required>
+          </div>
+    
+          <div class="form__element">
+            <label class="form__label" for="telefono">Número de teléfono:</label>
+            <input
+              class="form__input"
+              type="tel"
+              id="telefono"
+              name="telefono"
+              required
+              placeholder="111-222-333"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
+              title="Format 111-123-456"
+            >
+          </div>
+      
+          <fieldset class="form__element">
+            <legend>¿Cómo llegaste a oír de mí?</legend>
+            <div class="form__element__radio__list">
   
+              <input type="radio" id="tv" name="como" value="tv" checked>
+              <label for="tv">Publicidad TV</label>
+              <input type="radio" id="flyer" name="como" value="flyer">
+              <label for="tv">Panfletos</label>
+              <input type="radio" id="torneo" name="como" value="torneo">
+              <label for="tv">Torneo Artes Marciales</label>
+              <input type="radio" id="git" name="como" value="git">
+              <label for="tv">Git-Marcial-Hub</label>
+              
+              <label for="docu">Docus</label>
+              <input type="radio" id="docu" name="favCategory" value="docu">
+            </div>
+          </fieldset>
+    
+          <div class="form__element">
+            <label class="form__label" for="gitmarcialhub">Usuario de Git-Marcial-Hub:</label>
+            <input
+              class="form__input"
+              type="text"
+              id="gitmarcialhub"
+              name="gitmarcialhub"
+              placeholder="@Usuario"
+              pattern="^@[^\s]+"
+              required
+            >
+          </div>
+  
+          <div class="form__element">
+            <label class="form__label" for="nivel">Nivel de Artes Marciales</label>
+            <textarea class="form__input" name="nivel" id="nivel" placeholder="Describe tus conocimientos actuales de artes marciales" required></textarea>
+          </div>
+    
+          <div class="form__element form__element--checkbox">
+            <label class="form__label" for="revista">¿Traerías revistas de bikinis?</label>
+            <input type="checkbox" name="revista" id="revista" value="selected" checked>
+          </div>
+    
+    
+          <!--
+            <div role="button" tabindex="0">Submit</div>
+          -->
+          <!--
+            <button type="button">Mostrar mas campos</button>
+          -->
+          <div>
+            <input class="btn btn--secondary" type="reset" value="Reset fields">
+            <input class="btn" type="submit" value="Submit">
+          </div>
+        </form>
+      </section>
+
+
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis corrupti consectetur reiciendis!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis corrupti consectetur reiciendis!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis corrupti consectetur reiciendis!
+      </p>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis corrupti consectetur reiciendis!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis corrupti consectetur reiciendis!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis corrupti consectetur reiciendis!
+      </p>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis corrupti consectetur reiciendis!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis corrupti consectetur reiciendis!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis corrupti consectetur reiciendis!
+      </p>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis corrupti consectetur reiciendis!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis corrupti consectetur reiciendis!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis corrupti consectetur reiciendis!
+      </p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <!-- block / inline block -->
+    <div><p>2024 <strong>Maisu Dortokaren Orria</strong>.</p></div>
+    <div>
+      <a href="https://twitter.com/" target="_blank">
+        <span class="footer__icon"><i class="fi fi-brands-twitter"></i></span>  
+      </a>
+      <a href="https://es-es.facebook.com/" target="_blank">
+        <span class="footer__icon"><i class="fi fi-brands-facebook"></i></span>
+      </a>
+      <a href="https://www.instagram.com/" target="_blank">
+        <span class="footer__icon"><i class="fi fi-brands-instagram"></i></span>
+      </a>
+      <!--
+      <span class="footer__icon"><i class="fi fi-brands-twitter"></i></span>
+      <span class="footer__icon"><i class="fi fi-brands-facebook"></i></span>
+      <span class="footer__icon"><i class="fi fi-brands-instagram"></i></span>
+      -->
+    </div>
+
+    <!-- em, strong, span, br -->
+  </footer>
 </body>
 </html>
