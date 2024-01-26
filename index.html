@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="styles/header.css">
   <link rel="stylesheet" href="styles/banner.css">
   <link rel="stylesheet" href="styles/common.css">
+  <link rel="stylesheet" href="styles/components.css">
   <link rel="stylesheet" href="styles/footer.css">
   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-brands/css/uicons-brands.css'> <!--social-->
   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-straight/css/uicons-regular-straight.css'> <!--menú-->
@@ -31,7 +32,7 @@
         <h3>Escuela de artes marciales Kame.</h3>
         <h4>¡Todo el conocimiento a tu alcance!</h4>
         <hr>
-        <p class="cita">Las artes marciales no se estudian con el propósito de ser fuerte, ganar peleas y que las chicas les digan: «Pero mira qué fuerte estás, te mando un besito...», se estudian con el propósito de vivir mejor cada día.</p>
+        <p class="cita">Las artes marciales no se estudian con el propósito de ser fuerte, ganar peleas y que las chicas os digan: «Pero mira qué fuerte estás, te mando un besito...»; se estudian con el propósito de vivir mejor cada día.</p>
         <p class="firma">-Kame-Sen'nin-</p>
         <hr>
       </div>
@@ -52,14 +53,14 @@
 
       <section>
         <form method="post" action="/contactar"> <!--!!-->
-          
+
           <div class="form__element">
             <label class="form__label" for="nombre">Nombre</label>
             <input class="form__input" name="nombre" type="text" id="nombre" placeholder="Añade tu nombre" required>
           </div>
           <div class="form__element">
             <label class="form__label" for="apellidos">Apellidos</label>
-            <input class="form__input" name="apellidos" type="text" id="apellidos" placeholder="Añade tu nombre" required>
+            <input class="form__input" name="apellidos" type="text" id="apellidos" placeholder="Añade tus apellidos" required>
           </div>
     
           <div class="form__element">
@@ -76,23 +77,30 @@
             >
           </div>
       
-          <fieldset class="form__element">
-            <legend>¿Cómo llegaste a oír de mí?</legend>
+          <!--<fieldset class="form__element">-->
+          <div class="form__element">
+            <label class="form__label">¿Cómo llegaste a oír de mí?</label>
             <div class="form__element__radio__list">
-  
-              <input type="radio" id="tv" name="como" value="tv" checked>
-              <label for="tv">Publicidad TV</label>
-              <input type="radio" id="flyer" name="como" value="flyer">
-              <label for="tv">Panfletos</label>
-              <input type="radio" id="torneo" name="como" value="torneo">
-              <label for="tv">Torneo Artes Marciales</label>
-              <input type="radio" id="git" name="como" value="git">
-              <label for="tv">Git-Marcial-Hub</label>
-              
-              <label for="docu">Docus</label>
-              <input type="radio" id="docu" name="favCategory" value="docu">
+              <ul>
+                <li>
+                  <input type="radio" id="tv" name="como" value="tv" checked>
+                  <label for="tv">Publicidad TV</label>
+                </li>
+                <li>
+                  <input type="radio" id="flyer" name="como" value="flyer">
+                  <label for="tv">Panfletos</label>
+                </li>
+                <li>
+                  <input type="radio" id="torneo" name="como" value="torneo">
+                  <label for="tv">Torneo Artes Marciales</label>
+                </li>
+                <li>
+                  <input type="radio" id="git" name="como" value="git">
+                  <label for="tv">Git-Marcial-Hub</label>
+                </li>
+              </ul>
             </div>
-          </fieldset>
+          </div><!--</fieldset>-->
     
           <div class="form__element">
             <label class="form__label" for="gitmarcialhub">Usuario de Git-Marcial-Hub:</label>
@@ -112,10 +120,13 @@
             <textarea class="form__input" name="nivel" id="nivel" placeholder="Describe tus conocimientos actuales de artes marciales" required></textarea>
           </div>
     
-          <div class="form__element form__element--checkbox">
-            <label class="form__label" for="revista">¿Traerías revistas de bikinis?</label>
-            <input type="checkbox" name="revista" id="revista" value="selected" checked>
+          <div class="form__element">
+            <div class="form__element form__element--checkbox">
+              <label class="form__label" for="revista">¿Traerías revistas de bikinis?</label>
+              <input type="checkbox" name="revista" id="revista" value="selected" checked>
+            </div>
           </div>
+          
     
     
           <!--
@@ -125,29 +136,11 @@
             <button type="button">Mostrar mas campos</button>
           -->
           <div>
-            <input class="btn btn--secondary" type="reset" value="Reset fields">
-            <input class="btn" type="submit" value="Submit">
+            <input class="btn btn--secondary" type="reset" value="Borrar">
+            <input class="btn" type="submit" value="Enviar">
           </div>
         </form>
       </section>
-
-
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis corrupti consectetur reiciendis!
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis corrupti consectetur reiciendis!
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis corrupti consectetur reiciendis!
-      </p>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis corrupti consectetur reiciendis!
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis corrupti consectetur reiciendis!
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis corrupti consectetur reiciendis!
-      </p>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis corrupti consectetur reiciendis!
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis corrupti consectetur reiciendis!
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis corrupti consectetur reiciendis!
-      </p>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis corrupti consectetur reiciendis!
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis corrupti consectetur reiciendis!
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis corrupti consectetur reiciendis!
-      </p>
     </div>
   </main>
 
