@@ -3,6 +3,7 @@
   --sombra-avatar:rgba(0,0,0,0.44);
   --fondo-header-footer: rgb(199,247,124);
   --color-items: #b2e0af;
+  --fondo-skills: rgb(199,247,124);
 
 }
  
@@ -10,6 +11,7 @@ body{
   font-family:"roboto", Georgia, 'Times New Roman', Times, serif;
   font-size: 1.2rem;
   padding: 0;
+  margin:0;
   min-width: 438px;
   /*line-height: 1.4em;*/
   overflow-x: hidden;
@@ -29,25 +31,113 @@ a{
   color: initial;
 }
 
+.bikini{
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  /* height: 100px; */
+}
+
+.bikini a:hover{
+  padding: 0.5rem;
+  border-radius: 5px;
+  background-color: var(--color-items);
+  transition: all 0.4s linear;
+}
+
+.pag-error{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+  padding: 10rem 15rem 20rem 15rem;
+  background: radial-gradient(circle, rgba(199,247,124,1) 0%, rgba(114,222,70,1) 59%, rgba(92,201,47,1) 99%);
+}
+.pag-error img{
+  
+  width:100%;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.pag-error a:hover{
+  padding: 0.5rem;
+  border-radius: 5px;
+  background-color: var(--color-sombreado);
+  transition: all 0.4s linear;
+}
 .main{
   padding: 9rem 5rem 5rem 5rem;
 }
 
-/* .container{
-  margin: 0 auto;
-  min-width: 200px;
-} */
+.espacio{
+  margin: 10rem;
+}
 
 .container{
   margin: 0 auto;
   width: 85%;
   min-width: 200px;
   max-width: 900px;
+}
+
+.container img{
+  display: flex;
+  text-align: center;
+  /* padding: 2.6rem; */
+  gap: 10rem;
+  margin: 2rem auto;
+  width:auto;
+  max-width: 200px;
   
+}
+
+.container__video{
+  text-align: center;
+  /* padding: 2.6rem; */
+  margin: auto;
+  width:250px;
+  min-width:250px;
+  max-width: 400px;
+  border-radius: 5px;
+}
+
+.container__video__repro{
+  text-align: center;
+  /* padding: 2.6rem; */
+  margin: auto;
+  width:250px;
+  min-width: 250px;
+  max-width: 400px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 40px 4px rgba(43,184,27,1);
+  animation: fadeIn-video 5s forwards; 
+}
+
+@keyframes fadeIn-video {
+  0% {
+    opacity: 0
+  }
+  100%{
+    opacity: 1
+  } 
 }
 
 li{
   list-style-type: none;
+}
+
+@media (width >550px ){
+  .container{
+    width: 95%;
+  .container__video{
+    width:auto;
+  }
+  .container__video__repro{
+    width:auto;
+  }
 }
 
 @media (width > 1000px) {
@@ -55,4 +145,7 @@ li{
     padding: 14rem 5rem 5rem 5rem;
   }
 
+  .container img{
+    max-width: none;
+  }
 }

@@ -1,3 +1,7 @@
+#zona_formulario{
+  position: relative;
+  padding-top: 7rem;
+}
 .form__element {
   display: flex;
   flex-direction: column;
@@ -41,3 +45,95 @@
   border: none;
   background-color: var(--color-items);
 }
+
+.tabla-skills{
+  position: relative;
+  width: 100%;
+  background: var(--fondo-skills);
+  background: linear-gradient(90deg, rgba(199,247,124,1) 0%, rgba(92,201,47,1) 99%);
+  /* border: 2px solid rgba(199,247,124,0.4);  */
+  border-radius: 10px;
+  box-shadow: 16px 16px 43px -2px rgba(43,184,27,1);
+  padding: 2rem;
+  margin-top: 3rem;
+
+
+}
+
+/***** BARRAS HABILIDAD *****/
+
+.habilidad:not(:last-child){
+  /* Con esto hago que ignore a los hijos para aplicar la propiedad, 
+  lo que me permite aplicar el margin entre todas las clases 'habilidad' sin que
+  los hijos "molesten en medio"... los apartamos a un lado, por así decirlo*/
+  margin-bottom: 30px;
+}
+
+.detalles{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+
+.barra{
+  position: relative;
+  border: 2px solid green;
+  border-radius: 20px;
+}
+
+/*Aquí dibujo la barra entera y vacía*/
+.barra div{
+  position: relative;
+  width: 0;
+  height: 10px;
+  border-radius: 10px;
+  background-color: green;
+}
+
+
+#barra-ki{  /*<- el # para hacer referencia al id*/
+  /* forwards hace que el elemento conserve su esatdo final después de que se realice la 
+  animación en keyframe. Simplifico todo en una línea.
+
+  animation-name: barra-ki;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  */
+  animation: ki-barra 3s forwards;
+}
+@keyframes ki-barra {
+  100%{
+    width: 60%;
+  }
+}
+
+
+#barra-artes{
+  animation: artes-barra 3s forwards;
+}
+@keyframes artes-barra {
+  100%{
+    width: 90%;
+  }
+}
+
+#barra-fuerza{
+  animation: fuerza-barra 3s forwards;
+}
+@keyframes fuerza-barra {
+  100%{
+    width: 75%;
+  }
+}
+
+#barra-bikini{
+  animation: bikini-barra 3s forwards;
+}
+@keyframes bikini-barra {
+  100%{
+    width: 100%;
+  }
+}
+
