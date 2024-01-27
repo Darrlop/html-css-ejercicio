@@ -11,11 +11,29 @@
   <link rel="stylesheet" href="styles/components.css">
   <link rel="stylesheet" href="styles/footer.css">
   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-brands/css/uicons-brands.css'> <!--social-->
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-straight/css/uicons-regular-straight.css'> <!--menú-->
   <title>Habilidades y Dones</title>
 </head>
 <body>
   <header class="header">
     <div class="header__container">
+
+      <nav class="burguer">
+        <input type="checkbox" id="menu">
+        <label for="menu"> <i class="fi fi-rs-grid"></i> </label>
+        <ol>
+          <li>
+            <a href="index.html">Inicio</a> 
+          </li>
+          <li>
+            <a href="habilidades.html">Habilidades</a>
+          </li>
+          <li>
+            <a href="alumnos.html">Alumnos</a>
+          </li>
+        </ol>
+      </nav>
+
       <nav class="navigation">
         <ul>
           <li>
@@ -66,6 +84,16 @@
 
         <div class="habilidad">
           <div class="detalles">
+            <span>Fuerza Física Potenciada</span>
+            <span>70%</span>
+          </div>
+          <div class="barra">
+            <div id="barra-fuerza"></div>
+          </div>
+        </div>
+
+        <div class="habilidad">
+          <div class="detalles">
             <span>Experto en revistas de bikinis</span>
             <span>100%</span>
           </div>
@@ -79,9 +107,14 @@
     <div class="container">
       <img src="/images/dortoka_posic.jpeg" alt="Dortoka">
     </div>
+    
   </main>
+    
+  <div class="bikini">
+    <a href="404orria.html">Colección de revistas</a>
+  </div>
 
-    <footer class="footer">
+  <footer class="footer">
       <div><p>2024 <strong>Maisu Dortokaren Orria</strong>.</p></div>
       <div>
         <a href="https://twitter.com/" target="_blank" title="Twitter/X">

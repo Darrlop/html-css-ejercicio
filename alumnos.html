@@ -12,18 +12,34 @@
   <link rel="stylesheet" href="styles/grid.css">
   <link rel="stylesheet" href="styles/footer.css">
   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-brands/css/uicons-brands.css'> <!--social-->
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-straight/css/uicons-regular-straight.css'> <!--menú-->
   <title>Alumnos destacados</title>
 </head>
 <body>
   <header class="header">
     <div class="header__container">
-      <nav class="navigation">
-        <ul>
+
+      <nav class="burguer">
+        <input type="checkbox" id="menu">
+        <label for="menu"> <i class="fi fi-rs-grid"></i> </label>
+        <ol>
           <li>
             <a href="index.html">Inicio</a> 
           </li>
           <li>
-            <a href="#">Contacto</a>
+            <a href="habilidades.html">Habilidades</a>
+          </li>
+          <li>
+            <a href="alumnos.html">Alumnos</a>
+          </li>
+        </ol>
+      </nav>
+
+
+      <nav class="navigation">
+        <ul>
+          <li>
+            <a href="index.html">Inicio</a> 
           </li>
           <li>
             <a href="habilidades.html">Habilidades</a>
@@ -46,7 +62,7 @@
         <img src="assets/app/device-pile.png" alt="device content">
         <video src="assets/Die Augen-Schlab.mp4" muted autoplay loop>
         -->
-        <video class="container__video__repro" src="assets/Die Augen-Schlab.mp4" controls muted>
+        <video class="container__video__repro" src="assets/Die Augen-Schlab.mp4" controls muted autoplay>
           <source src="assets/Die Augen-Schlab.mp4" type="video/mp4">
         </video>
       </div>
@@ -63,40 +79,56 @@
         </div>
         <div class="item-grid">
           <figure>
-            <img src="images/goku2.webp" alt="Goku">
-            <figcaption>Son Goku</figcaption>
+            <img src="images/krilin2.jpg" alt="Krilin">
+            <figcaption>Krilin</figcaption>
           </figure>
         </div>
         <div class="item-grid">
           <figure>
-            <img src="images/goku2.webp" alt="Goku">
-            <figcaption>Son Goku</figcaption>
+            <img src="images/yamcha2.webp" alt="Yamcha">
+            <figcaption>Yamcha</figcaption>
           </figure>
         </div>
         <div class="item-grid">
           <figure>
-            <img src="images/goku2.webp" alt="Goku">
-            <figcaption>Son Goku</figcaption>
+            <img src="images/gohan.jpg" alt="Gohan">
+            <figcaption>Son Gohan</figcaption>
           </figure>
         </div>
         <div class="item-grid">
           <figure>
-            <img src="images/goku2.webp" alt="Goku">
-            <figcaption>Son Goku</figcaption>
+            <img src="images/tensinhan.jpg" alt="Ten Shin Han">
+            <figcaption>Ten Shin Han</figcaption>
           </figure>
         </div>
         <div class="item-grid">
           <figure>
-            <img src="images/goku2.webp" alt="Goku">
-            <figcaption>Son Goku</figcaption>
+            <img src="images/bulma2.png" alt="Bulma">
+            <figcaption>Bulma</figcaption>
           </figure>
         </div>
       </div>
     </div>
-    
-    
   </div>
 
+  <div class="bikini">
+    <a href="500orria.html">Antagonistas</a>
+  </div>
+
+  <footer class="footer">
+    <div><p>2024 <strong>Maisu Dortokaren Orria</strong>.</p></div>
+    <div>
+      <a href="https://twitter.com/" target="_blank" title="Twitter/X">
+        <span class="footer__icon"><i class="fi fi-brands-twitter"></i></span>  
+      </a>
+      <a href="https://es-es.facebook.com/" target="_blank" title="Facebook">
+        <span class="footer__icon"><i class="fi fi-brands-facebook"></i></span>
+      </a>
+      <a href="https://www.instagram.com/" target="_blank" title="Instagram">
+        <span class="footer__icon"><i class="fi fi-brands-instagram"></i></span>
+      </a>
+    </div>
+  </footer>
 </body>
 </html>
 
