@@ -23,7 +23,7 @@
   bottom: 0;
   right: 0;
   opacity: 0.5;
-  background-image: url("images/KameHouse_small.png");
+  background-image: url("../images/KameHouse_small.png");
   /* background-size: 100px; */
   background-repeat: no-repeat;
   background-size:cover;
@@ -37,13 +37,13 @@
 
 @media (width > 750px) {
   .banner__image{
-    background-image: url("images/KameHouse_medium.png");
+    background-image: url("../images/KameHouse_medium.png");
   }
 }
 
 @media (width > 975px) {
   .banner__image{
-    background-image: url("images/KameHouse_large3.png");
+    background-image: url("../images/KameHouse_large3.png");
   }
 }
 
