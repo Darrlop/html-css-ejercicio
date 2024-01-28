@@ -1,3 +1,15 @@
+.btn{
+  display: inline-block;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  margin: 1rem 0.5rem 0rem 0rem;
+  border-radius: 5px;
+}
+
+.btn:hover{
+  background-color: var(--color-items);
+  transition: all 0.4s linear;
+}
+
 #zona_formulario{
   position: relative;
   padding-top: 7rem;
@@ -16,7 +28,6 @@
   /* gap: 10px; */
   padding: 10px auto;
 }
-
 
 .form__element.form__element--checkbox {
   flex-direction: row;
@@ -108,7 +119,6 @@
     width: 60%;
   }
 }
-
 
 #barra-artes{
   animation: artes-barra 3s forwards;

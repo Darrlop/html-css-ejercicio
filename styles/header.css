@@ -125,12 +125,12 @@ input:checked  ~ i{
   }
   .navigation ul li{
     display: inline-block;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .navigation ul li a{
     display: block;
-    padding: 0.5rem 0.5rem 0.5rem 0;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
     border-radius: 5px;
   }
 
@@ -141,5 +141,11 @@ input:checked  ~ i{
 
   .burguer{
     display:none;
+  }
+}
+
+@media (width > 1300px){
+  .navigation ul li{
+    font-size: 1.5rem;
   }
 }
