@@ -65,6 +65,7 @@
     · Adaptar la web para tener el header y footer fijo, actualizando únicamente la parte main de la 
         misma al navegar por ella.
     · Mejor ordenación entre divs y sections.
+    · Implementación de un modo oscuro en la web.
 
 
 
