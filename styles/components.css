@@ -33,8 +33,7 @@
   flex-direction: row;
   align-items: center;
   gap: 20px; 
-  /*gap: 10px sería lo ideal para separar los componentes, pero usaremos otro para aprender*/
-  /* input[type="xx" más abajo*/
+
 }
 
 .form__element.form__element--checkbox .form__label {
@@ -59,7 +58,7 @@
 
 .tabla-skills{
   position: relative;
-  width: 100%;
+  width: 85%;
   background: var(--fondo-skills);
   background: linear-gradient(90deg, rgba(199,247,124,1) 0%, rgba(92,201,47,1) 99%);
   /* border: 2px solid rgba(199,247,124,0.4);  */
@@ -105,7 +104,7 @@
 
 
 #barra-ki{  /*<- el # para hacer referencia al id*/
-  /* forwards hace que el elemento conserve su esatdo final después de que se realice la 
+  /* forwards hace que el elemento conserve su estado final después de que se realice la 
   animación en keyframe. Simplifico todo en una línea.
 
   animation-name: barra-ki;
